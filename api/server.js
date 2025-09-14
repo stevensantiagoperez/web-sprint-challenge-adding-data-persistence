@@ -7,6 +7,6 @@ const server = express()
 
 server.use(express.json())
 
-server.use('/api/project', projectsRouter)
+server.use('./api/project', projectsRouter)
 
 module.exports = server
